@@ -1,0 +1,34 @@
+.Newpost{
+    font-size: 30px;
+    text-align:center;
+}
+
+.three-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.button-main{
+    width: 80%;
+}
+
+.input{
+    width: 80%;
+}
+
+@media only screen and (max-width: 750px) {
+    .three-buttons{
+        width: 95%;
+    }    
+    
+    .button-main{
+        width: 95%;
+    }
+
+    .input{
+        width: 95%;
+    }
+}

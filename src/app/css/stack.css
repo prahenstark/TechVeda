@@ -1,0 +1,162 @@
+main{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.top-nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-nav-logo{
+    margin-left: 30px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #569AFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-nav-logo > span{
+    color: #FF6666;
+}
+
+.profile-info{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+.profile-info:hover{
+    background: #22223a;
+}
+
+.profile-info > span{
+    margin: 0 15px;
+}
+
+.nav-container{
+    height: calc(100vh - 70px);
+    display: flex;
+}
+
+.sidebar{
+    width: 100px;
+}
+
+.sidebar-content{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sidebar-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90px;
+    height: 80px;
+    border-radius: 20px 0 0 20px;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    margin: 5px 0;
+    color: #72728f;
+}
+
+.sidebar-item:hover{
+    color: #fff;
+}
+
+.sidebar-item.active-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90px;
+    height: 80px;
+    border-radius: 20px 0 0 20px;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    margin: 5px 0;
+    color: #fff;
+    background: #262641;
+}
+
+.sidebar-label{
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.content{
+    flex: 1;
+    background: #262641;
+    border-top-left-radius: 40px;
+    overflow: hidden;
+    padding: 40px 30px;
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: #569AFF;
+}
+
+.responsive-icon{
+    display: none !important;
+}
+
+@media only screen and (max-width: 450px) {
+	.responsive-icon{
+        display: block !important;
+    }
+    
+    .profile-info > span{
+        display: none;
+    }
+
+    .sidebar{
+        position: fixed;
+        bottom: 0;
+        left: -150px;
+        background: #1A1A2E;
+        height: calc(100vh - 70px);
+        transition: 0.5s ease-in-out;
+    }
+
+    .sidebar.active-bar{
+        left: 0;
+    }
+
+    .sidebar-content{
+        align-items: center;
+    }
+    
+    .sidebar-item{
+        border-radius: 20px !important;
+    }
+
+    .content{
+        border-top-left-radius: 0;
+    }
+}

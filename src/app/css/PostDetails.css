@@ -1,0 +1,15 @@
+.details-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meta-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats{
+    margin: 15px 0;
+}

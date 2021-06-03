@@ -1,0 +1,51 @@
+.channels{
+    background-color: #545479;
+    height: 250px;
+    width: 18%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px #4f4f7763;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    color: #fff;
+}
+
+.channel-name{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.channel-description{
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 1250px) {
+    .channels{
+        width: 28%;
+    }  
+}
+
+@media only screen and (max-width: 850px) {
+    .channels{
+        width: 38%;
+    }  
+}
+
+@media only screen and (max-width: 650px) {
+    .channels{
+        width: 68%;
+    }  
+}
+
+@media only screen and (max-width: 450px) {
+    .channels{
+        width: 88%;
+    }  
+}
