@@ -1,6 +1,6 @@
 # Tech_Veda
 An open source E-learning web app for financially weak children
-Check it on web : (https://tech-veda.web.app/)
+Check it on web : https://tech-veda.web.app/
 
 # Idea
 The COVID19 pandemic outbreak has brought India into a critical situation. As we know the 2nd wave is approaching we have to fight the crisis with strict steps and with proper measures.Ant this has effected the education system badly so to make all education material at one place we have designed our solution TechVeda.
